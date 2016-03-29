@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package no1c;
+package no1e;
 import java.util.Scanner;
 /**
  *
  * @author Praktikum
  */
-public class No1c {
+public class No1e {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         int[] bil=new int[100];
-        bil[0]=0;
-        bil[1]=1;       
+         int[] bilangan=new int[100];
+        bilangan[0]=0;
+        bilangan[1]=1;       
         int deret;
        
         Scanner input = new Scanner (System.in);
@@ -27,8 +27,8 @@ public class No1c {
         deret = Integer.parseInt(data);
        
         for(int i=0;i<deret;i++){
-            System.out.print(bil[i]+" ");
-            bil[i+2]=bil[i]+bil[i+1];
+            System.out.print(bilangan[i]+" ");
+            bilangan[i+2]=bilangan[i]+bilangan[i+1];
         }
     }
     

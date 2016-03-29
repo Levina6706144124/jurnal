@@ -3,42 +3,36 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package no1;
-
+package no1c;
+import java.util.Scanner;
 /**
  *
  * @author Praktikum
  */
- import java.util.Scanner;
-public class No1 {
+public class No1c {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-		Scanner input = new Scanner(System.in);
-		int num1=0,num2=1,sum;
-		int count;
-		
-		
-		
-		System.out.println("Masukan angka: ");
-		int N = input.nextInt();
-		
-		
-		
-		
-
-		for (count = 1;count<= N; count++) { 
-		sum=num1+num2; 
-		num1=num2; 
-		num2=sum; 
-		System.out.print(" "+num1); 
-		} 
-		} 
-		} 
+         int[] bil=new int[100];
+        bil[0]=0;
+        bil[1]=1;       
+        int deret;
+       
+        Scanner input = new Scanner (System.in);
+        System.out.print("Masukan angka : ");
+        String data = input.nextLine();
+        deret = Integer.parseInt(data);
+       
+        for(int i=0;i<deret;i++){
+            System.out.print(bil[i]+" ");
+            bil[i+2]=bil[i]+bil[i+1];
+        }
+    }
+    
+}
     
     
 
